@@ -24,6 +24,7 @@ Enemy.prototype.update = function(dt) {
     if (this.x > 500) {
         this.x = -50;
         this.speed = 100 + Math.floor(Math.random() * 222);
+    };
         
     //Setting the collisions between the enemy and the player
     if (player.x < this.x + 65 && player.x + 65 > this.x && player.y < this.y + 50 && 50 + player.y > this.y) {
@@ -111,6 +112,7 @@ Player.prototype.handleInput = function(key) {
             this.y += this.speed + 10;
             break;
     }
+};
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
