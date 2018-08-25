@@ -87,6 +87,11 @@ var enemyPosition = [100, 165, 230, 295];
 //Instantiating the player object and taking the intial position
 var player = new Player(200, 380, 50);
 
+enemyPosition.forEach(function(locY) {
+    'use strict'
+  var enemy = new Enemy(0, locY, 300);
+    allEnemies.push(enemy);
+});
 
 
 // This listens for key presses and sends the keys to your
