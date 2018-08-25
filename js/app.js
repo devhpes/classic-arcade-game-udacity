@@ -87,12 +87,30 @@ var enemyPosition = [100, 165, 230, 295];
 //Instantiating the player object and taking the intial position
 var player = new Player(200, 380, 50);
 
+//for each loop to set the enemy at different position
+//Thanks to my friend for this forEach
 enemyPosition.forEach(function(locY) {
     'use strict'
   var enemy = new Enemy(0, locY, 300);
     allEnemies.push(enemy);
 });
 
+Player.prototype.handleInput = function(key) {
+    'use strict'
+    switch (key) {
+        case 'left':
+            this.x -= this.speed + 20;
+            break;
+        case 'up':
+            this.y -= this.speed + 10;
+            break;
+        case 'right':
+            this.x += this.speed + 20;
+            break;
+        case 'down':
+            this.y += this.speed + 10;
+            break;
+    }
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
