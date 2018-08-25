@@ -52,7 +52,25 @@ var Player = function(x, y, speed){
 
 Player.prototype.update = function(dt) {
     'use strict'
-}
+    // Prevent player from moving off the canvas
+    if (this.y > 380) {
+        this.y = 380;
+    }
+
+    if (this.x > 400) {
+        this.x = 400;
+    }
+
+    if (this.x < 0) {
+        this.x = 0;
+    }
+
+    // if the player reached the top of the canvas, wining the game
+    if (this.y < 0) {
+        this.x = 200;
+        this.y = 380;
+    }
+};
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
