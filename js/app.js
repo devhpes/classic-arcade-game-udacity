@@ -95,7 +95,7 @@ Player.prototype.handleInput = function(key) {
             this.x += 20;
         }
         if(key == "down" && this.y < 380){
-            this.y += 10;
+            this.y += 20;
         }
     }
 
