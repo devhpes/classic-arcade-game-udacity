@@ -2,7 +2,7 @@
 
 # Classic Arcade Game
 
-!https://raw.githubusercontent.com/devhpes/classic-arcade-game-udacity/master/images/screenshot.png
+![Classic Arcade Game ScreenShot](images/screenshot.png)
 
 1) Clone the project to play : 
 
