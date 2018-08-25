@@ -2,6 +2,8 @@
 
 # Classic Arcade Game
 
+https://github.com/devhpes/classic-arcade-game-udacity/blob/master/images/screenshot.png?raw=true
+
 1) Clone the project to play : 
 
     - Open your command line or Terminal application and enter the directory where you would like to copy the repository.
