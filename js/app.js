@@ -1,5 +1,5 @@
 // Enemies our player must avoid
-var Enemy = function() {
+var Enemy = function(x, y, speed) {
     'use strict'
     // Variables applied to each of our instances go here,
     // we've provided one for you to get started
@@ -84,7 +84,7 @@ Player.prototype.render = function() {
 // Place the player object in a variable called player
 var allEnemies = [];
 //Taking randome positions
-var enemyPosition = [100, 165, 230, 295];
+var enemyPosition = [60, 140, 230];
 //Instantiating the player object and taking the intial position
 var player = new Player(200, 380, 50);
 
