@@ -85,21 +85,19 @@ enemyPosition.forEach(function(locY) {
 
 Player.prototype.handleInput = function(key) {
     'use strict'
-    switch (key) {
-        case 'left':
-            this.x -= this.speed + 20;
-            break;
-        case 'up':
-            this.y -= this.speed + 10;
-            break;
-        case 'right':
-            this.x += this.speed + 20;
-            break;
-        case 'down':
-            this.y += this.speed + 10;
-            break;
+        if(key == "left" && this.x > 0){
+            this.x -= 20;
+        }
+        if(key == "up" && this.x < 380){
+            this.y -= 20;
+        }
+        if(key == "right" && this.y > 0){
+            this.x += 20;
+        }
+        if(key == "down" && this.y < 380){
+            this.y += 10;
+        }
     }
-};
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
