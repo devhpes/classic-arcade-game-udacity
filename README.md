@@ -2,6 +2,8 @@
 
 # Classic Arcade Game
 
+![Classic Arcade Game ScreenShot](images/screenshot.png)
+
 1) Clone the project to play : 
 
     - Open your command line or Terminal application and enter the directory where you would like to copy the repository.
