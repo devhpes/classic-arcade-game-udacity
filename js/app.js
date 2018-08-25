@@ -81,6 +81,11 @@ Player.prototype.render = function() {
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
+var allEnemies = [];
+//Taking randome positions
+var enemyPosition = [100, 165, 230, 295];
+//Instantiating the player object and taking the intial position
+var player = new Player(200, 380, 50);
 
 
 
