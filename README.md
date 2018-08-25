@@ -6,14 +6,14 @@
 
     - Open your command line or Terminal application and enter the directory where you would like to copy the repository.
 
-     cd (the directory of the project)
+         `cd (the directory of the project)`
 
     - Clone the repository by replacing <URL> with clone URL you copied in the previous step.
 
-     git clone <URL>
+         `git clone <URL>`
 
 
- 2) Or you can play it online here - https://devhpes.github.io/classic-arcade-game-udacity/
+ 2) Or you can play it online - https://devhpes.github.io/classic-arcade-game-udacity/
 
 # How To Play 
 
