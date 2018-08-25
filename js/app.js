@@ -20,6 +20,17 @@ Enemy.prototype.update = function(dt) {
     // all computers.
     this.dt = dt;
     this.x += this.speed * dt;
+
+    if (this.x > 500) {
+        this.x = -50;
+        this.speed = 100 + Math.floor(Math.random() * 222);
+        
+    //Setting the collisions between the enemy and the player
+    if (player.x < this.x + 65 && player.x + 65 > this.x && player.y < this.y + 50 && 50 + player.y > this.y) {
+        // Return player to start position
+        player.x = 200;
+        player.y = 380;
+    };
 };
 
 // Draw the enemy on the screen, required method for game
