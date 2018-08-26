@@ -55,7 +55,7 @@ Player.prototype.update = function(dt) {
     'use strict'
     // if the player reached the top of the canvas, wining the game
     if (this.y < 0) {
-        
+        modalToggle();
         this.x = 200;
         this.y = 380;
     }
@@ -112,3 +112,20 @@ document.addEventListener('keyup', function(e) {
 
     player.handleInput(allowedKeys[e.keyCode]);
 });
+
+
+//Selecting congratulation modal div
+const congoModal = document.querySelector('.modalBody');
+//Congratulation modal popup
+function modalToggle() {
+    'use strict'; // turn on Strict Mode
+    congoModal.classList.toggle('hide');
+}
+
+function playAgain() {
+    'use strict'; // turn on Strict Mode
+    location.reload();
+    modalToggle();
+}
+
+modalToggle()
