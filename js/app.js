@@ -107,7 +107,8 @@ document.addEventListener('keyup', function(e) {
         37: 'left',
         38: 'up',
         39: 'right',
-        40: 'down'
+        40: 'down',
+        13: 'enter'
     };
 
     player.handleInput(allowedKeys[e.keyCode]);
@@ -119,10 +120,18 @@ const congoModal = document.querySelector('.modalBody');
 //Congratulation modal popup
 function modalToggle() {
     'use strict'; // turn on Strict Mode
+    //Hiding the modal
     congoModal.classList.toggle('hide');
-    //resetting the value, if the player won the match means reaches to the water
+    //Calling reset function
+    reset();
+}
+
+//reseting the game player and enemies
+function reset(){
+    //Instantiating the player
     var player = new player();
-    var enemyPosition = [];
+    //Instantiating the enemy
+    var enemy = new enemy();
 }
 
 //Playagain function, game will reload after the player click on the playagain button
