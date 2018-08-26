@@ -2,6 +2,9 @@ body {
     text-align: center;
 }
 
+/*
+CSS for popup
+*/
 .modalBody {
     position: fixed;
     top: 0;
@@ -11,6 +14,9 @@ body {
     background: rgba(0, 0, 0, 0.450);
 }
 
+/*
+CSS styling for popup modal
+*/
 .populModal {
     position: relative;
     padding: 1em;
@@ -24,10 +30,16 @@ body {
     border-radius: 10px;
 }
 
+/*
+CSS for play again button hover
+*/
 .playagain:hover {
     background-color: #1ece27;
 }
 
+/*
+CSS for play again button
+*/
 .playagain {
     width: 8em;
     height: 5em;
