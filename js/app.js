@@ -98,6 +98,9 @@ Player.prototype.handleInput = function(key) {
         if(key == "down" && this.y < 380){
             this.y += 20;
         }
+        if(key == "enter" && this.y < 0){
+            playAgain();
+        }
     }
 
 // This listens for key presses and sends the keys to your
