@@ -125,10 +125,9 @@ function modalToggle() {
     var enemyPosition = [];
 }
 
+//Playagain function, game will reload after the player click on the playagain button
 function playAgain() {
     'use strict'; // turn on Strict Mode
     location.reload();
     modalToggle();
 }
-
-modalToggle()
