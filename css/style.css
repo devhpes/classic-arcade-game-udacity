@@ -18,7 +18,7 @@ CSS for popup
 /*
 CSS styling for popup modal
 */
-.populModal {
+.popupModal {
     position: relative;
     padding: 1em;
     width: 350px;
