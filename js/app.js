@@ -120,6 +120,9 @@ const congoModal = document.querySelector('.modalBody');
 function modalToggle() {
     'use strict'; // turn on Strict Mode
     congoModal.classList.toggle('hide');
+    //resetting the value, if the player won the match means reaches to the water
+    var player = new player();
+    var enemyPosition = [];
 }
 
 function playAgain() {
