@@ -98,6 +98,8 @@ Player.prototype.handleInput = function(key) {
         if(key == "down" && this.y < 380){
             this.y += 20;
         }
+        //Added enter key, if user press the enter key on keyboard, the popup
+        //wil disappear and game will restart
         if(key == "enter" && this.y < 0){
             playAgain();
         }
@@ -140,6 +142,7 @@ function reset(){
 //Playagain function, game will reload after the player click on the playagain button
 function playAgain() {
     'use strict'; // turn on Strict Mode
+    //reloading the browser when user click on play again button to start a new game
     location.reload();
     //Toggling the modal, when user click on play again button
     modalToggle();
