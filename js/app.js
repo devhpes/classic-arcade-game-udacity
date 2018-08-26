@@ -129,7 +129,9 @@ function modalToggle() {
 function playAgain() {
     'use strict'; // turn on Strict Mode
     location.reload();
+    //Toggling the modal, when user click on play again button
     modalToggle();
 }
 
+//Being sure that the modal don't popup accidentally
 modalToggle();
