@@ -1,3 +1,36 @@
 body {
     text-align: center;
 }
+
+.modalBody {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.450);
+}
+
+.populModal {
+    position: relative;
+    padding: 1em;
+    width: 350px;
+    height: 200px;
+    top: 0%;
+    left: 50%;
+    background:#0291e4;
+    transform: translate(-50%, 70%);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.playagain:hover {
+    background-color: #32af2d;
+}
+
+.playagain {
+    width: 8em;
+    height: 5em;
+    color: rgb(0, 0, 0);
+    border-radius: 5px; 
+}

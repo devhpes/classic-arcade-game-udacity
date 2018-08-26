@@ -55,6 +55,7 @@ Player.prototype.update = function(dt) {
     'use strict'
     // if the player reached the top of the canvas, wining the game
     if (this.y < 0) {
+        
         this.x = 200;
         this.y = 380;
     }
