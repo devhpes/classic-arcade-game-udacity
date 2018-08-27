@@ -138,6 +138,7 @@ function reset(){
     const player = new player();
     //Instantiating the enemy
     const enemy = new enemy();
+    //if the user click on play again or press enter the game will get to their intial positions
     this.x = 200;
     this.y = 380;
 }
