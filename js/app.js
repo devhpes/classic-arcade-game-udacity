@@ -56,8 +56,7 @@ Player.prototype.update = function(dt) {
     // if the player reached the top of the canvas, wining the game
     if (this.y < 0) {
         modalToggle();
-        this.x = 200;
-        this.y = 380;
+        reset();
     }
 };
 
@@ -139,6 +138,8 @@ function reset(){
     const player = new player();
     //Instantiating the enemy
     const enemy = new enemy();
+    this.x = 200;
+    this.y = 380;
 }
 
 //Playagain function, game will reload after the player click on the playagain button
