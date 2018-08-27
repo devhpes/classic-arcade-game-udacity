@@ -1,6 +1,7 @@
+"use strict";
+
 // Enemies our player must avoid
 let Enemy = function(x, y, speed) {
-    "use strict";
     // Variables applied to each of our instances go here,
     // we've provided one for you to get started
     this.x = x;
@@ -14,7 +15,6 @@ let Enemy = function(x, y, speed) {
 // Update the enemy's position, required method for game
 // Parameter: dt, a time delta between ticks
 Enemy.prototype.update = function(dt) {
-    "use strict";
     // You should multiply any movement by the dt parameter
     // which will ensure the game runs at the same speed for
     // all computers.
@@ -36,15 +36,13 @@ Enemy.prototype.update = function(dt) {
 
 // Draw the enemy on the screen, required method for game
 Enemy.prototype.render = function() {
-    "use strict";
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
 
 // Now write your own player class
 // This class requires an update(), render() and
 // a handleInput() method.
-let Player = function(x, y, speed){
-    "use strict";
+let Player = function(x, y, speed) {
     this.x = x;
     this.y = y;
     this.speed = speed;
@@ -52,7 +50,6 @@ let Player = function(x, y, speed){
 };
 
 Player.prototype.update = function(dt) {
-    "use strict";
     // if the player reached the top of the canvas, wining the game
     if (this.y < 0) {
         modalToggle();
@@ -62,7 +59,6 @@ Player.prototype.update = function(dt) {
 
 // Draw the enemy on the screen, required method for game
 Player.prototype.render = function() {
-    "use strict";
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
 
@@ -78,13 +74,11 @@ const player = new Player(200, 380, 50);
 //for each loop to set the enemy at different position
 //Thanks to my friend for this forEach
 enemyPosition.forEach(function(locY) {
-    "use strict";
     const enemy = new Enemy(0, locY, 300);
     allEnemies.push(enemy);
 });
 
 Player.prototype.handleInput = function(key) {
-    "use strict";
         if(key == "left" && this.x > 0){
             this.x -= 20;
         }
@@ -107,7 +101,6 @@ Player.prototype.handleInput = function(key) {
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
 document.addEventListener('keyup', function(e) {
-    "use strict";
     let allowedKeys = {
         37: 'left',
         38: 'up',
@@ -124,7 +117,6 @@ document.addEventListener('keyup', function(e) {
 const congoModal = document.querySelector('.modalBody');
 //Congratulation modal popup
 function modalToggle() {
-    "use strict"; // turn on Strict Mode
     //Hiding the modal
     congoModal.classList.toggle('hide');
     //Calling reset function
@@ -133,7 +125,6 @@ function modalToggle() {
 
 //reseting the game player and enemies
 function reset(){
-    "use strict";
     //Instantiating the player
     const player = new player();
     //Instantiating the enemy
@@ -145,7 +136,6 @@ function reset(){
 
 //Playagain function, game will reload after the player click on the playagain button
 function playAgain() {
-    "use strict"; // turn on Strict Mode
     //reloading the browser when user click on play again button to start a new game
     location.reload();
     //Toggling the modal, when user click on play again button
